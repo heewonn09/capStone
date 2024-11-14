@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#969696"/> <!-- 버튼 배경 색상 -->
+    <corners android:radius="8dp"/> <!-- 모서리 반경을 줄여 각진 모양을 더 강조 -->
+</shape>

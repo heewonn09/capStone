@@ -1,0 +1,152 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 툴바 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6A6A6A"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 뒤로가기 아이콘 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"/>
+
+
+        <!-- 타이틀 텍스트 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="개인 기본정보"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <!-- 홈 아이콘 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_home"/> <!-- 홈 아이콘으로 교체 -->
+
+    </LinearLayout>
+
+    <!-- 시각장애인 여부 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시각장애인 여부"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/visionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/vision_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시각"
+            android:checked="true"
+            android:buttonTint="#5A4634"/>
+
+        <RadioButton
+            android:id="@+id/vision_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비시각"
+            android:buttonTint="#5A4634"/>
+    </RadioGroup>
+
+    <!-- 성별 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자"
+            android:checked="true"
+            android:buttonTint="#5A4634"/>
+
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자"
+            android:buttonTint="#5A4634"/>
+    </RadioGroup>
+
+    <!-- 생년 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        />
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!-- 임신 여부 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="임신여부"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/pregnancyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pregnancy_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비임신"
+            android:buttonTint="#5A4634"/>
+
+        <RadioButton
+            android:id="@+id/pregnancy_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="임신"
+            android:checked="true"
+            android:buttonTint="#5A4634"/>
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 툴바 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6A6A6A"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 뒤로가기 아이콘 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"/>
+
+
+        <!-- 타이틀 텍스트 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="환경설정"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <!-- 홈 아이콘 -->
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_home" /> <!-- 홈 아이콘으로 교체 -->
+
+    </LinearLayout>
+
+    <!-- 공백 공간 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <!-- 버튼 1: 개인 기본정보 -->
+    <Button
+        android:id="@+id/btnPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="개인 기본정보"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <!-- 버튼 3: 앱 환경설정 -->
+    <Button
+        android:id="@+id/btnAppSettings"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="앱 환경설정"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_background"/>
+
+    <!-- 버튼 4: 음성 도움말 -->
+    <Button
+
+        android:id="@+id/btnVoiceHelp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="음성 도움말"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:background="@drawable/rounded_button_background"/>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000000">
+        <Button
+            android:id="@+id/bbtn2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:padding="1dp"
+            android:text="뒤"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="의약품 상세"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="의약품명: "
+        android:textSize="20sp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/inbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="기본 정보"/>
+    <Button
+        android:id="@+id/inbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="효능 효과"/>
+    <Button
+        android:id="@+id/inbtn3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="용법 용량"/>
+    <Button
+        android:id="@+id/inbtn4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="주의 사항"/>
+    <Button
+        android:id="@+id/inbtn5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="제품 모양"/>
+    <Button
+        android:id="@+id/inbtn6"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="저장 방법"/>
+    <Button
+        android:id="@+id/inbtn7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="유효 기간"/>
+    <Button
+        android:id="@+id/inbtn8"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:text="원료 및 성분"/>
+
+</LinearLayout>
